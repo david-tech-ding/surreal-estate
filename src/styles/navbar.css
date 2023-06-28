@@ -1,0 +1,29 @@
+.navbar {
+    display: flex;
+}
+
+.navbar-logo{
+    margin-right: 1em;
+    max-width: 50px;
+    max-height: 50px;
+    padding: 1em;
+    align-self: center;
+}
+
+.navbar-title{
+    margin-right: 1em;
+    align-self: center;
+}
+
+.navbar-links{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center
+}
+
+.navbar-links-item{
+    list-style-type: none;
+    padding: 0 0.8em;
+    align-self: center;
+}
