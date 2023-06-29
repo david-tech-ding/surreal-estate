@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import axios from "axios";
 import "../styles/add-property.css";
 
 const AddProperty = () => {
@@ -18,7 +19,16 @@ const AddProperty = () => {
 
   const handleAddProperty = (event) => {
     event.preventDefault();
-    console.log(fields);
+
+    axios
+      .post("http://localhost:3000/api/v1/PropertyListing", fields)
+      .then((response) => {
+        console.log(response);
+        setFields(initialState.fields);
+      })
+      .catch((error) => {
+        console.error(error);
+      });
   };
 
   const handleFieldChange = (event) => {
