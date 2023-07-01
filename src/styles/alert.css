@@ -1,7 +1,16 @@
-/* .alert-success {
-   background-color: green; 
+.alert-success {
+   border: 1px solid #99e599;
+   background-color: #90ee90; 
+   color: green;
+   width: 80%;
+   margin: 1em 1em;
 }
 
 .alert-error {
-    background-color: red;
-} */
+    border: 1px solid #ffcccb;
+    background-color: #f6d5d4;
+    color: red;
+    width: 80%;
+    margin: 1em 1em;
+    padding: 0.2em;
+}

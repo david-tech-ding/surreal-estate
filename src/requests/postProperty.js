@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const postProperty = (fields, setAlert) => {
-  return axios
+  axios
     .post("http://localhost:3000/api/v1/PropertyListing", fields)
     .then(() => {
       setAlert({

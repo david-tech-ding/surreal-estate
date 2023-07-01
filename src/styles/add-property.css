@@ -2,10 +2,18 @@
     box-sizing: border-box;
 }
 
+.add-property{
+  display: flex;
+  justify-content: center;
+}
+
 .add-property-container {
   display: flex;
   flex-direction: column;
-  margin-left: 1.5em;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 33%;
 }
 
 .add-property-container label, .add-property-container input {
@@ -13,7 +21,7 @@
     flex-direction: column;
     margin-bottom: 10px;
     width: 200px;
-}
+  }
 
 #type {
   width: 5em;

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../styles/add-property.css";
 import Alert from "./Alert";
 import postProperty from "../requests/postProperty";
+import "../styles/alert.css";
 
 const AddProperty = () => {
   const initialState = {
