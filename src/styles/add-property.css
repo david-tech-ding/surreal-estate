@@ -1,4 +1,31 @@
-.add-property{
-    padding: 1em;
+* {
+    box-sizing: border-box;
 }
 
+.add-property-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1.5em;
+}
+
+.add-property-container label, .add-property-container input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 200px;
+}
+
+#type {
+  width: 5em;
+}
+
+#city {
+  width: 8em;
+}
+
+.add-btn {
+  width: 50px;
+  border-radius: 3px;
+  background-color: purple;
+  color: white;
+}
