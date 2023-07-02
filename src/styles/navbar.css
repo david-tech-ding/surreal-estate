@@ -1,11 +1,12 @@
 .navbar {
     display: flex;
+    background-color: white;
 }
 
 .navbar-logo{
     margin-right: 1em;
-    max-width: 80px;
-    max-height: 80px;
+    max-width: 60px;
+    max-height: 60px;
     padding: 1em;
     align-self: center;
 }

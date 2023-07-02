@@ -7,12 +7,22 @@ import {
   faSterlingSign,
   faEnvelope,
 } from "@fortawesome/free-solid-svg-icons";
+import houseLogo from "../images/house.png";
 
-const PropertyCard = ({ fields }) => {
-  const { title, city, type, bathrooms, bedrooms, price, email } = fields;
-
+const PropertyCard = ({
+  title,
+  city,
+  type,
+  bathrooms,
+  bedrooms,
+  price,
+  email,
+}) => {
   return (
     <div className="property-card">
+      <div className="img">
+        <img src={houseLogo} alt="house-logo" className="house-logo" />
+      </div>
       <div className="property-card-title">{title}</div>
       <div className="property-card-type-city">
         {type} - {city}
