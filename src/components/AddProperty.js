@@ -106,6 +106,8 @@ const AddProperty = () => {
             <option value="Liverpool">Liverpool</option>
             <option value="London">London</option>
             <option value="Leeds">Leeds</option>
+            <option value="Leeds">Birmingham</option>
+            <option value="Leeds">Cornwall</option>
           </select>
         </label>
         <label htmlFor="email">

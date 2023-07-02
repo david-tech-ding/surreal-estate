@@ -1,0 +1,16 @@
+.side-bar{
+    font-size: 13.5px;
+}
+
+.city-link, .price-link{
+    text-decoration: none;
+    color: black
+}
+
+.city, .price, .sort-container{
+    padding-top: 30px;
+}
+
+.city-link:hover, .price-link:hover{
+    font-weight: 800;
+}

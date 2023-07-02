@@ -16,14 +16,12 @@ describe("PropertyCard", () => {
   };
 
   test("it renders correctly", () => {
-    const rendered = ReactTestRenderer.create(
-      <PropertyCard fields={validProps} />
-    );
+    const rendered = ReactTestRenderer.create(<PropertyCard {...validProps} />);
     expect(rendered).toMatchSnapshot();
   });
 
   test("renders correct props values", () => {
-    render(<PropertyCard fields={validProps} />);
+    render(<PropertyCard {...validProps} />);
     expect(screen.getByText("test title")).toHaveClass("property-card-title");
 
     expect(screen.getByText("test type - test city")).toHaveClass(

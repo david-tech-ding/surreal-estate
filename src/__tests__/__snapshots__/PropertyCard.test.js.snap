@@ -5,6 +5,15 @@ exports[`PropertyCard it renders correctly 1`] = `
   className="property-card"
 >
   <div
+    className="img"
+  >
+    <img
+      alt="house-logo"
+      className="house-logo"
+      src="house.png"
+    />
+  </div>
+  <div
     className="property-card-title"
   >
     test title
