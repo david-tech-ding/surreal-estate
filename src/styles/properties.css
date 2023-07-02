@@ -1,21 +1,35 @@
-.properties-container{
-    background-color: lightgrey;
-}
-.properties-cards{
-    padding: 0.5rem;
-}
-
-.properties-cards > .item{
-    display: inline-block;
-    padding: 1rem;
-    margin: 1em;
-    width: 31%;
-    box-sizing: border-box;
+.properties-container {
+    display: grid;
+    grid-template-columns: 160px auto;
+    grid-template-areas: 'sidebar-container properties-cards';
+  }
+  
+  .sidebar-container {
+    grid-area: sidebar-container;
     background-color: white;
-    height: 20em;
-}
-
-
-.house-logo{
-    max-width: 3em;
-}
+    height: 100%;
+  }
+  
+  .properties-cards {
+    grid-area: properties-cards;
+    padding: 0.5rem;
+  }
+  
+  .properties-cards > .item {
+    display: inline-block;
+    width: 100%;
+    padding: 0.5rem;
+    box-sizing: border-box;
+  }
+  
+  @media screen and (min-width: 600px) {
+    .properties-cards > .item {
+      width: 50%;
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .properties-cards > .item {
+      width: 33.33%;
+    }
+  }

@@ -1,13 +1,41 @@
-.email-button{
+  .property-card {
+    background-color: white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .property-card-title {
+    padding: 15px 5px 5px 5px;
+    font-size: 18px;
+    font-weight: 800;
+  }
+  
+  .property-card-type-city,
+  .property-card-bedrooms,
+  .property-card-bathrooms,
+  .property-card-price {
+    padding: 5px;
+  }
+  
+  .bathIcon, 
+  .bedIcon, 
+  .priceIcon,
+  .emailIcon {
+    padding-right: 7px;
+  }
+  
+  .property-card-email {
+    text-decoration: none;
+    padding-top: 10px;
+  }
+  
+  .property-card button {
     width: 100%;
-}
-
-.property-card{
-    height: 50%;
-}
-
-.img{
-    align-content: center;
-    background-color: lightgray;
-    height: 33%
-}
+    display: block;
+    padding: 10px;
+    font-size: 15px; 
+    position: relative;
+  }
+  
+  

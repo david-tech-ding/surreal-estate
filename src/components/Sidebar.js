@@ -6,7 +6,7 @@ const Sidebar = () => {
   return (
     <div className="side-bar">
       <div className="filter-city-container">
-        Filter by city
+        <b>Filter by city</b>
         <div className="city">
           <Link to={`/?query={"city": "Manchester"}`} className="city-link">
             Manchester
@@ -38,7 +38,7 @@ const Sidebar = () => {
           </Link>
         </div>
         <div className="sort-container">
-          Sort by
+          <b>Sort by</b>
           <div className="price">
             <Link to="/" className="price-link">
               Price Ascending
